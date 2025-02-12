@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Color</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark w-100 position-fixed top-0 start-0">
+        <a class="navbar-brand ms-3" href="#">Aplicación de Pruebas de Color</a>
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+      
+      
+
+      <div class="row justify-content-center mt-4 mb-1">
+        <h1 class="text-center py-3">🎨 Herramienta de Selección de Color</h1>
+      </div>
+      
+      <div class="row justify-content-center">
+        <div class="col-md-10 col-lg-8">
+          <div class="card shadow-lg">
+            <div class="card-body">
+              <div id="color-box" class="rounded mb-4 shadow"></div>
+              <div class="row g-3">
+                <div class="col-md-4">
+                  <label for="color-picker" class="form-label">Elija el color:</label>
+                  <input type="color" id="color-picker" class="form-control form-control-color">
+                </div>
+                <div class="col-md-8 d-flex align-items-center">
+                  <div class="input-group">
+                    <label for="hex-value" class="input-group-text">Código Hexadecimal:</label>
+                    <input type="text" id="hex-value" class="form-control" readonly>
+                    <button class="btn btn-dark" id="copy-btn">
+                      <i data-feather="clipboard"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <hr class="my-4">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <label for="red-range" class="form-label">Rojo: <span id="red-value">0</span></label>
+                  <div id="red-circle" class="circle"></div>
+                  <input type="range" id="red-range" class="form-range" min="0" max="255" value="0">
+                  <input type="number" id="red-input" class="form-control mt-2" min="0" max="255" value="0">
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="green-range" class="form-label">Verde: <span id="green-value">0</span></label>
+                  <div id="green-circle" class="circle"></div>
+                  <input type="range" id="green-range" class="form-range" min="0" max="255" value="0">
+                  <input type="number" id="green-input" class="form-control mt-2" min="0" max="255" value="0">
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="blue-range" class="form-label">Azul: <span id="blue-value">0</span></label>
+                  <div id="blue-circle" class="circle"></div>
+                  <input type="range" id="blue-range" class="form-range" min="0" max="255" value="0">
+                  <input type="number" id="blue-input" class="form-control mt-2" min="0" max="255" value="0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="bg-dark text-white py-3 position-fixed bottom-0 start-0 w-100">
+          <div class="container text-center">
+            <p class="mb-0">&copy; 2025 Juan Moisés Gómez Aispuro | Todos los derechos reservados.</p>
+          </div>
+        </footer>
+      
+      </div>
+
+      
+    </div>
+
+    <script src="./js/main.js"></script>
+    <script>feather.replace();</script>
+  </body>
+</html>

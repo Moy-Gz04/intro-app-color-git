@@ -1,0 +1,110 @@
+body {
+  background-color: #161616;
+  font-family: 'Nunito', sans-serif;
+  color: #eceff4;
+}
+
+h1 {
+  color: #eceff4;
+  font-weight: 550;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#color-box {
+  width: 100%;
+  height: 130px;
+  background-color: #091c47;
+  border: 5px solid #fcfdfe;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+}
+
+.card {
+  border-radius: 15px;
+  background: #06132f;
+  padding: 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+  max-width: 80px;
+  text-align: center;
+}
+
+input[type="color"] {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+label {
+  font-weight: bold;
+  color: #eceff4;
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
+
+button#copy-btn {
+  background-color: #4c566a;
+  color: #eceff4;
+  border: none;
+  cursor: pointer;
+}
+
+button#copy-btn:hover {
+  background-color: #3b4252;
+}
+
+input#hex-value {
+  background-color: #434c5e;
+  color: #eceff4;
+  border: none;
+}
+
+button#theme-toggle {
+  background-color: #4c566a;
+  color: #eceff4;
+  border: none;
+}
+
+button#theme-toggle:hover {
+  background-color: #3b4252;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+#red-circle {
+  background-color: red;
+}
+
+#green-circle {
+  background-color: green;
+}
+
+#blue-circle {
+  background-color: blue;
+}
+
+.input-group-text {
+  background-color: #434c5e;
+  color: #eceff4;
+  font-weight: bold;
+}
+
+body {
+  padding-top: 60px; /* Ajusta este valor según la altura del navbar */
+}
+
