@@ -1,9 +1,23 @@
+/* 
+   Configuración general del body:
+   - Fondo oscuro (#161616)
+   - Fuente Nunito para una mejor legibilidad
+   - Color de texto en tono claro (#eceff4)
+*/
 body {
   background-color: #161616;
   font-family: 'Nunito', sans-serif;
   color: #eceff4;
+  padding-top: 60px; /* Ajusta el espaciado para que el navbar fijo no cubra el contenido */
 }
 
+/* 
+   Estilo del título principal:
+   - Color claro para contraste
+   - Peso de fuente ligeramente más grueso (550)
+   - Alineado al centro
+   - Margen inferior para separación con el contenido
+*/
 h1 {
   color: #eceff4;
   font-weight: 550;
@@ -11,6 +25,13 @@ h1 {
   margin-bottom: 20px;
 }
 
+/* 
+   Caja de color dinámico:
+   - Tamaño del recuadro
+   - Color de fondo inicial (#091c47)
+   - Borde blanco (#fcfdfe) con esquinas redondeadas
+   - Efecto de transición suave para cambios de color
+*/
 #color-box {
   width: 100%;
   height: 130px;
@@ -20,6 +41,13 @@ h1 {
   transition: background-color 0.3s;
 }
 
+/* 
+   Estilos para la tarjeta de la herramienta:
+   - Fondo oscuro azulado (#06132f)
+   - Bordes redondeados
+   - Sombras para efecto de elevación
+   - Espaciado interno adecuado
+*/
 .card {
   border-radius: 15px;
   background: #06132f;
@@ -27,11 +55,23 @@ h1 {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
+/* 
+   Estilo de los inputs numéricos:
+   - Tamaño limitado para mantener la estructura
+   - Alineado del texto al centro
+*/
 input[type="number"] {
   max-width: 80px;
   text-align: center;
 }
 
+/* 
+   Estilos del input de selección de color:
+   - Se adapta al ancho del contenedor padre
+   - Altura fija para una mejor visualización
+   - Sin borde para un diseño más limpio
+   - Cursor de selección visualmente atractivo
+*/
 input[type="color"] {
   display: block;
   width: 100%;
@@ -42,15 +82,31 @@ input[type="color"] {
   margin-top: 5px;
 }
 
+/* 
+   Estilos generales de etiquetas:
+   - Peso de fuente en negrita
+   - Color de texto claro para contraste
+*/
 label {
   font-weight: bold;
   color: #eceff4;
 }
 
+/* 
+   Estilos de los sliders de rango:
+   - Se cambia el cursor al estilo "pointer" para indicar que son interactivos
+*/
 input[type="range"] {
   cursor: pointer;
 }
 
+/* 
+   Botón de copiar el código hexadecimal:
+   - Fondo gris oscuro
+   - Texto en color claro
+   - Sin bordes para un diseño minimalista
+   - Cambia de color al pasar el mouse
+*/
 button#copy-btn {
   background-color: #4c566a;
   color: #eceff4;
@@ -62,12 +118,25 @@ button#copy-btn:hover {
   background-color: #3b4252;
 }
 
+/* 
+   Input del código hexadecimal:
+   - Fondo oscuro con tono gris azulado
+   - Texto en color claro
+   - Sin bordes para mantener la estética limpia
+*/
 input#hex-value {
   background-color: #434c5e;
   color: #eceff4;
   border: none;
 }
 
+/* 
+   Botón de cambio de tema:
+   - Fondo gris oscuro
+   - Texto en color claro
+   - Sin bordes para un diseño limpio
+   - Cambio de color al pasar el mouse
+*/
 button#theme-toggle {
   background-color: #4c566a;
   color: #eceff4;
@@ -78,6 +147,11 @@ button#theme-toggle:hover {
   background-color: #3b4252;
 }
 
+/* 
+   Indicadores de color en los sliders:
+   - Son círculos pequeños junto a los controles de ajuste RGB
+   - Color de fondo representa el valor correspondiente
+*/
 .circle {
   width: 20px;
   height: 20px;
@@ -98,13 +172,14 @@ button#theme-toggle:hover {
   background-color: blue;
 }
 
+/* 
+   Estilo de los textos en la caja de entrada:
+   - Fondo oscuro con color gris azulado
+   - Texto blanco para mejor contraste
+   - Peso de fuente en negrita para mayor visibilidad
+*/
 .input-group-text {
   background-color: #434c5e;
   color: #eceff4;
   font-weight: bold;
 }
-
-body {
-  padding-top: 60px; /* Ajusta este valor según la altura del navbar */
-}
-
